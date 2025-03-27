@@ -1,7 +1,7 @@
 {
   "id": "io.github.buonhobo.Katharsis",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "47",
+  "runtime-version": "48",
   "sdk": "org.gnome.Sdk",
   "command": "Katharsis",
   "finish-args": [
@@ -12,10 +12,18 @@
     "--filesystem=/run/docker.sock"
   ],
   "modules": [
-    "python3-requirements.json",
-    "python3-pyyaml.json",
-    "python3-hatchling.json",
-    "python3-pygments.json",
+    "pypi-dependencies.json",{
+      "name" : "fast_float",
+      "buildsystem" : "cmake-ninja",
+      "sources" : [
+          {
+              "type" : "git",
+              "url" : "https://github.com/fastfloat/fast_float.git",
+              "branch" : "main"
+          }
+      ]
+  },
+
     {
       "name": "vte",
       "buildsystem": "meson",
@@ -24,7 +32,7 @@
         {
           "type": "git",
           "url": "https://gitlab.gnome.org/GNOME/vte.git",
-          "tag": "0.78.0"
+          "tag": "0.80.0"
         }
       ]
     },
