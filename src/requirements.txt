@@ -20,7 +20,7 @@ oauthlib==3.2.2
 ordered-set==4.1.0
 packaging==24.2
 pyasn1==0.6.1
-pyasn1_modules==0.4.1
+pyasn1_modules==0.4.2
 Pygments==2.19.1
 pyroute2==0.8.1
 python-dateutil==2.9.0.post0
@@ -33,7 +33,8 @@ rsa==4.9
 setuptools==78.1.0
 six==1.17.0
 slug==2.0
-types-setuptools==76.0.0.20250313
+types-setuptools==78.1.0.20250329
 typing_extensions==4.13.0
 urllib3==2.3.0
 websocket-client==1.8.0
+pyuv==1.4.0
