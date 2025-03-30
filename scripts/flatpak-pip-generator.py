@@ -370,7 +370,7 @@ with tempfile.TemporaryDirectory(prefix=tempdir_prefix) as tempdir:
 # Python3 packages that come as part of org.freedesktop.Sdk.
 # buonhobo: This is dumb, I'm not using the org.freedesktop.Sdk so this only broke my stuff.
 # system_packages = ['cython', 'easy_install', 'mako', 'markdown', 'meson', 'pip', 'pygments', 'setuptools', 'six', 'wheel']
-system_packages = ['setuptools']
+system_packages = []
 
 fprint('Generating dependencies')
 for package in packages:
